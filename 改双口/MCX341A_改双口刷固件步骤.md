@@ -55,8 +55,12 @@ flint.bat -d mt4099_pci_cr0 q
 ```
 flint -d /dev/mst/mt4099_pci_cr0 rb 0 2097152 341A-XCEN_MT_1270112023.bin
 ```
+或，备份全部
+```
+flint.bat -d {设备名称} ri {备份出来的固件的文件名称}
+```
 
----XCEN a3 a6 刷最新的cx342a xccn即可---
+---XCEN a3 a6 刷最新的cx342a xccn即可，---
 
 ```
 flint.bat -d mt4099_pci_cr0 -i fw-ConnectX3-rel-2_42_5000-MCX342A-XCC_Ax-UEFI-14.11.45-FlexBoot-3.4.752.bin --allow_psid_change b
